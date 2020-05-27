@@ -7,38 +7,33 @@ html{
 }
 /**navbar**/
 #navbar-grid{
-  height: 20%;
+  height: 20vh;
   width: 100%;
   background-color: #191BA9;
   display: grid;
   grid-template-columns: 20% 80%;
-  position: fixed;
+  /**position: fixed;**/
 }
 #navbar-img{
-  display: grid;
   grid-column: 1;
   width: auto;
-  height: 100%;
+  height: 20vh;
 }
 #navbar{
   grid-column: 2;
-  position: relative;
-  top: 40%;
-  bottom: 50%;
 }
 .navbar-txt{
-  font-family: consolas;
-  text-align: center;
-  font-size: 30px;
-  color: #5CC2F2;
-  list-style-type: none;
+  background-color: #191BA9;
   float: right;
-  margin-right: 20px;
+  margin-right: 10%;
+  margin-top: 8vh;
+  list-style-type: none;
+  font-size: 5vh;
 }
-a.navbar-lnk{
-  display: block;
-  text-decoration: none;
+.navbar-lnk{
+  background-color: #191BA9;
   color: #5CC2F2;
+  text-decoration: none;
 }
 a.navbar-lnk:visited{
   color: #5CC2F2;
@@ -65,7 +60,7 @@ a.navbar-lnk:hover{
 #header-img{
   display: block;
   margin-left: 42.5%;
-  margin-top: 20%;
+  margin-top: 10%;
   height: 25%;
   width: auto;
   transition: transform 1s;
@@ -127,9 +122,6 @@ a.navbar-lnk:hover{
   color: #191BA9;
   text-decoration: none;
 }
-.info-lnk:visited{
-  .info-lnk;
-}
 .info-lnk:hover{
   color: white;
 }
@@ -165,7 +157,7 @@ a.navbar-lnk:hover{
   grid-column: 4;
   grid-row: 2;
 }
-/**medium screens**/
+/**medium screens
 @media only screen and (max-width: 700px){
  .navbar-txt{
    font-size: 16px;
@@ -185,8 +177,8 @@ a.navbar-lnk:hover{
   font-size: 3vh;
   margin-top: 0.5vh;
  }
-}
-/**small screens**/
+}**/
+/**small screens
 @media only screen and (max-width: 500px){
  .navbar-txt{
    font-size: 14px;
@@ -207,8 +199,8 @@ a.navbar-lnk:hover{
   font-size: 2vh;
   margin-top: 0;
  }
-}
-/**mobile**/
+}**/
+/**mobile
 @media only screen and (max-width: 430px){
   *{
     overflow-x: hidden;
@@ -232,4 +224,9 @@ a.navbar-lnk:hover{
   font-size: 2vh;
   margin-top: 0;
  }
+}**/
+@media only screen and (max-width: 400px){
+  .navbar-txt{
+    font-size: 3vh;
+  }
 }
