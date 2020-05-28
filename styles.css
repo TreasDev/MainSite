@@ -79,6 +79,7 @@ a.navbar-lnk:hover{
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: 10% 30% 40% 20%;
+  min-height: fit-content;
 }
 .title-box{
   grid-row-start: 2;
@@ -225,8 +226,30 @@ a.navbar-lnk:hover{
   margin-top: 0;
  }
 }**/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px){
+  #navbar-img{
+    display: none;
+  }
+  #navbar-grid{
+    grid-template-columns: 100%;
+  }
+  #navbar{
+    grid-column: 1;
+  }
   .navbar-txt{
-    font-size: 3vh;
+    font-size: 2vh;
+    text-align: center;
+  }
+  #header-img{
+    margin-top: 25%;
+    margin-right: 15%;
+    padding-right: 50%;
+  }
+  .title-txt{
+    font-size: 10vh;
+  }
+  .txt{
+    font-size: 2.5vh;
+    margin-top: 0.5vh;
   }
 }
